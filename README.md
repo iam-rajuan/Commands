@@ -126,27 +126,9 @@
   **Example:**
   Displays a compact version of `git status`, showing modified (`M`), new (`A`), and deleted (`D`) files.
 
-### SSH Key Setup
 
-- **Generate SSH key**
-  ```sh
-  ssh-keygen -t rsa -b 4096 -C "rajuan.official@.com"
-  ```
 
-- **Start SSH agent**
-  ```sh
-  eval $(ssh-agent -s)
-  ```
 
-- **Add SSH key to agent**
-  ```sh
-  ssh-add ~/.ssh/id_rsa
-  ```
-
-- **View SSH public key**
-  ```sh
-  cat ~/.ssh/id_rsa.pub
-  ```
 
 ### Remote Repository Setup
 
@@ -189,3 +171,39 @@
   git push
   ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### SSH Key Setup
+
+- **Generate SSH key**
+  ```sh
+  ssh-keygen -t rsa -b 4096 -C "rajuan.official@.com"
+  ```
+
+- **Start SSH agent**
+  ```sh
+  eval $(ssh-agent -s)
+  ```
+
+- **Add SSH key to agent**
+  ```sh
+  ssh-add ~/.ssh/id_rsa
+  ```
+
+- **View SSH public key**
+  ```sh
+  cat ~/.ssh/id_rsa.pub
+  ```
