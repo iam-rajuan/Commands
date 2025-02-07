@@ -207,3 +207,25 @@
   ```sh
   cat ~/.ssh/id_rsa.pub
   ```
+
+
+# VS Code Shortcuts
+
+# Terminal Command
+
+- **Go back to user location**
+```sh
+cd
+```
+- **Go back Previous location like backward**
+```sh
+cd -
+```
+- **Change C: to D:**
+```sh
+D: 
+```
+- **Previous Directory**
+```sh
+cd ..
+```
