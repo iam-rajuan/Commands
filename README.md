@@ -171,6 +171,45 @@
   git push
   ```
 
+## Ignoring `package-lock.json` and `node_modules` in Git  
+
+### 1. Modify `.gitignore` in Your Repository  
+To ignore `package-lock.json` and `node_modules/` from all folders inside a specific repository, add the following lines to the `.gitignore` file at the root of your project:  
+
+```gitignore
+**/package-lock.json
+**/node_modules/
+```  
+
+This ensures that `package-lock.json` and all `node_modules/` folders are ignored throughout the repository.  
+
+### 2. Use a Global `.gitignore` (For All Repositories)  
+To ignore `package-lock.json` and `node_modules/` in all your Git repositories, follow these steps:  
+
+```sh
+git config --global core.excludesfile ~/.gitignore_global
+```  
+
+Then, edit `~/.gitignore_global` and add:  
+
+```gitignore
+**/package-lock.json
+**/node_modules/
+```  
+
+### 3. Remove Already Tracked `package-lock.json` and `node_modules/` Files  
+If `package-lock.json` and `node_modules/` have already been committed, remove them from tracking:  
+
+```sh
+git rm --cached **/package-lock.json
+git rm -r --cached **/node_modules/
+git commit -m "Removed package-lock.json and node_modules from tracking"
+git push origin main  # or your current branch
+```  
+
+
+  
+
 
 
 
@@ -228,4 +267,9 @@ D:
 - **Previous Directory**
 ```sh
 cd ..
+```
+- **Close Terminal and Open Existing Directory**
+```sh
+code -r <dirname> 
+code -r ExpressJS 
 ```
