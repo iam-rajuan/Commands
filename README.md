@@ -225,7 +225,7 @@ git push origin main  # or your current branch
 
 
 
-### SSH Key Setup
+# SSH Key Setup
 
 - **Generate SSH key**
   ```sh
