@@ -273,3 +273,70 @@ cd ..
 code -r <dirname> 
 code -r ExpressJS 
 ```
+
+
+
+
+
+
+
+# Installed Extensions
+
+Below is a list of all the extensions installed in Visual Studio Code:
+
+## General Extensions
+- **Error Lens**: Improve highlighting of errors, warnings, and other language diagnostics.
+- **JavaScript and TypeScript Nightly**: Enables TypeScript@next to power VS Code's built-in JavaScript and TypeScript support.
+- **Auto Rename Tag**: Auto rename paired HTML/XML tags.
+- **Code Runner**: Run code snippets for multiple languages including C, C++, Java, JS, PHP, Python, and more.
+- **Dracula Theme Official**: A dark theme for many editors, shells, and more.
+- **Material Icon Theme**: Material Design Icons for Visual Studio Code.
+- **SynthWave '84**: A Synthwave-inspired color theme.
+- **vscode-icons**: Icons for Visual Studio Code.
+- **Jellyfish Theme**: A theme for your code editor.
+- **GitHub Theme**: GitHub theme for VS Code.
+
+## C/C++ Development
+- **C/C++**: C/C++ IntelliSense, debugging, and code browsing.
+- **C/C++ Extension Pack**: Popular extensions for C++ development.
+- **C/C++ Themes**: UI Themes for C/C++ extension.
+- **CMake**: CMake language support for Visual Studio Code.
+- **CMake Tools**: Extended CMake support in Visual Studio Code.
+
+## Java Development
+- **Debugger for Java**: A lightweight Java debugger for Visual Studio Code.
+- **Extension Pack for Java**: Popular extensions for Java development.
+- **Gradle for Java**: Manage Gradle projects and run Gradle tasks.
+- **Language Support for Java(TM) by Red Hat**: Java linting, IntelliSense, formatting, and more.
+- **Maven for Java**: Manage Maven projects and execute goals.
+- **Project Manager for Java**: Manage Java projects in Visual Studio Code.
+- **Test Runner for Java**: Run and debug JUnit or TestNG test cases.
+
+## PHP Development
+- **PHP**: All-in-One PHP support including IntelliSense, Debug, Formatter, and more.
+- **PHP Intelephense**: PHP code intelligence for Visual Studio Code.
+- **PHP Profiler**: Support for PHP (Xdebug) profiling files.
+- **PHP Server**: Serve your project with PHP.
+- **IntelliPHP - AI Autocomplete for PHP**: AI-assisted development for PHP.
+
+## Web Development
+- **Tailwind CSS IntelliSense**: Intelligent Tailwind CSS tooling for VS Code.
+- **Live Server**: Launch a development local server with live reload feature.
+- **Live Preview**: Hosts a local server for previewing webpages.
+- **Prettier - Code formatter**: Code formatter using Prettier.
+
+## React/Redux/GraphQL Development
+- **ES7 React/Redux/GraphQL/React-Native snippets**: Simple extensions for React, Redux, and GraphQL in JS/TS with ES7 syntax.
+- **ES7+ React/Redux/React-Native snippets**: Extensions for React, React-Native, and Redux in JS/TS with ES7+ syntax.
+
+## AI-Assisted Development
+- **IntelliCode**: AI-assisted development.
+- **IntelliCode API Usage Examples**: See relevant code examples from GitHub for over 100K different APIs.
+
+## Other Utilities
+- **Composer**: All-in-One Composer integration for PHP.
+- **JavaScript (ES6) code snippets**: Code snippets for JavaScript in ES6 syntax.
+
+---
+
+This list includes all the extensions installed across the provided screenshots.
