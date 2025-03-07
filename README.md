@@ -1,4 +1,6 @@
-## Git Commands
+<!-- ## Git Commands -->
+<h1 align="center">Git Commands</h1>
+
 
 ### Checking Status
 
@@ -247,9 +249,9 @@ git push origin main  # or your current branch
   cat ~/.ssh/id_rsa.pub
   ```
 
-
-# VS Code Shortcuts
-
+<br><br><br><br>
+<!-- # VS Code Shortcuts -->
+<h1 align="center">VS Code Shortcuts</h1>
 # Terminal Command
 
 - **Go back to user location**
@@ -280,7 +282,9 @@ code -r ExpressJS
 
 
 
-# Installed Extensions
+<!-- # Installed Extensions -->
+<h1 align="center">Installed Extensions</h1>
+
 
 Below is a list of all the extensions installed in Visual Studio Code:
 
@@ -339,4 +343,176 @@ Below is a list of all the extensions installed in Visual Studio Code:
 
 ---
 
-This list includes all the extensions installed across the provided screenshots.
+
+
+<!-- # Installed Extensions -->
+<h1 align="center">Installed Extensions</h1>
+
+<!-- Below is a list of all the extensions installed in Visual Studio Code: -->
+
+## General Extensions
+- **Improve highlighting of errors, warnings, and other language diagnostics**
+```sh
+Error Lens
+```
+
+- **Enables TypeScript@next to power VS Code's built-in JavaScript and TypeScript support**
+```sh
+JavaScript and TypeScript Nightly
+```
+- **Auto rename paired HTML/XML tags**
+```sh
+Auto Rename Tag
+```
+- **Run code snippets for multiple languages including C, C++, Java, JS, PHP, Python, and more**
+```sh
+Code Runner
+```
+- **A dark theme for many editors, shells, and more**
+```sh
+Dracula Theme Official
+```
+- **Material Design Icons for Visual Studio Code**
+```sh
+Material Icon Theme
+```
+- **A Synthwave-inspired color theme**
+```sh
+SynthWave '84
+```
+- **Icons for Visual Studio Code**
+```sh
+vscode-icons
+```
+- **A theme for your code editor**
+```sh
+Jellyfish Theme
+```
+- **GitHub theme for VS Code**
+```sh
+GitHub Theme
+```
+
+## C/C++ Development
+- **C/C++ IntelliSense, debugging, and code browsing**
+```sh
+C/C++
+```
+- **Popular extensions for C++ development**
+```sh
+C/C++ Extension Pack
+```
+- **UI Themes for C/C++ extension**
+```sh
+C/C++ Themes
+```
+- **CMake language support for Visual Studio Code**
+```sh
+CMake
+```
+- **Extended CMake support in Visual Studio Code**
+```sh
+CMake Tools
+```
+
+## Java Development
+- **A lightweight Java debugger for Visual Studio Code**
+```sh
+Debugger for Java
+```
+- **Popular extensions for Java development**
+```sh
+Extension Pack for Java
+```
+- **Manage Gradle projects and run Gradle tasks**
+```sh
+Gradle for Java
+```
+- **Java linting, IntelliSense, formatting, and more**
+```sh
+Language Support for Java(TM) by Red Hat
+```
+- **Manage Maven projects and execute goals**
+```sh
+Maven for Java
+```
+- **Manage Java projects in Visual Studio Code**
+```sh
+Project Manager for Java
+```
+- **Run and debug JUnit or TestNG test cases**
+```sh
+Test Runner for Java
+```
+
+## PHP Development
+- **All-in-One PHP support including IntelliSense, Debug, Formatter, and more**
+```sh
+PHP
+```
+- **PHP code intelligence for Visual Studio Code**
+```sh
+PHP Intelephense
+```
+- **Support for PHP (Xdebug) profiling files**
+```sh
+PHP Profiler
+```
+- **Serve your project with PHP**
+```sh
+PHP Server
+```
+- **AI-assisted development for PHP**
+```sh
+IntelliPHP - AI Autocomplete for PHP
+```
+
+## Web Development
+- **Intelligent Tailwind CSS tooling for VS Code**
+```sh
+Tailwind CSS IntelliSense
+```
+- **Launch a development local server with live reload feature**
+```sh
+Live Server
+```
+- **Hosts a local server for previewing webpages**
+```sh
+Live Preview
+```
+- **Code formatter using Prettier**
+```sh
+Prettier - Code formatter
+```
+
+## React/Redux/GraphQL Development
+- **Simple extensions for React, Redux, and GraphQL in JS/TS with ES7 syntax**
+```sh
+ES7 React/Redux/GraphQL/React-Native snippets
+```
+- **Extensions for React, React-Native, and Redux in JS/TS with ES7+ syntax**
+```sh
+ES7+ React/Redux/React-Native snippets
+```
+
+## AI-Assisted Development
+- **AI-assisted development**
+```sh
+IntelliCode
+```
+- **See relevant code examples from GitHub for over 100K different APIs**
+```sh
+IntelliCode API Usage Examples
+```
+
+## Other Utilities
+- **All-in-One Composer integration for PHP**
+```sh
+Composer
+```
+- **Code snippets for JavaScript in ES6 syntax**
+```sh
+JavaScript (ES6) code snippets
+```
+
+---
