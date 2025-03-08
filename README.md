@@ -1,18 +1,7 @@
 <!-- ## Git Commands -->
 <h1 align="center">Git Commands</h1>
 
-<!-- https://zimfw.sh/ -->
 
-### Terminal Mod
-
-- **ubuntu**
-  ```sh
-  https://zimfw.sh/
-  ```
-- **Windows**
-  ```sh
-  Powershell 7+
-  ```
 ### Checking Status
 
 - **Check git status**
@@ -260,10 +249,28 @@ git push origin main  # or your current branch
   cat ~/.ssh/id_rsa.pub
   ```
 
+
+
+
+  
+
 <br><br><br><br>
 <!-- # VS Code Shortcuts -->
 <h1 align="center">VS Code Shortcuts</h1>
-# Terminal Command
+<!-- https://zimfw.sh/ -->
+
+## Terminal Mod
+
+- **ubuntu**
+  ```sh
+  https://zimfw.sh/
+  ```
+- **Windows**
+  ```sh
+  Powershell 7+
+  ```
+  
+## Terminal Command
 
 - **Go back to user location**
 ```sh
