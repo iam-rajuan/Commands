@@ -1,7 +1,18 @@
 <!-- ## Git Commands -->
 <h1 align="center">Git Commands</h1>
 
+<!-- https://zimfw.sh/ -->
 
+### Terminal Mod
+
+- **ubuntu**
+  ```sh
+  https://zimfw.sh/
+  ```
+- **Windows**
+  ```sh
+  Powershell 7+
+  ```
 ### Checking Status
 
 - **Check git status**
