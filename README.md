@@ -532,8 +532,5 @@ Composer
 ```sh
 JavaScript (ES6) code snippets
 ```
-```sh
-JavaScript (ES6) code snippets
-```
 
 ---
