@@ -255,7 +255,7 @@ git push origin main  # or your current branch
   
 
 <br><br><br><br>
-<h1 align="center">VS Code Shortcuts</h1><h1 align="center">Terminal Modify</h1>
+<h1 align="center">Terminal Modify</h1>
 <!-- https://zimfw.sh/ -->
 
 ## Terminal Mod
