@@ -255,8 +255,7 @@ git push origin main  # or your current branch
   
 
 <br><br><br><br>
-<!-- # VS Code Shortcuts -->
-<h1 align="center">VS Code Shortcuts</h1>
+<h1 align="center">VS Code Shortcuts</h1><h1 align="center">Terminal Modify</h1>
 <!-- https://zimfw.sh/ -->
 
 ## Terminal Mod
@@ -265,10 +264,21 @@ git push origin main  # or your current branch
   ```sh
   https://zimfw.sh/
   ```
-- **Windows**
+- **Windows Terminal Admin**
   ```sh
   Powershell 7+
+  winget install --id Microsoft.Powershell
   ```
+## IDM 
+  - **IDM Crack**
+  ```sh
+  winget install --id Microsoft.Powershell
+  ```
+
+<br><br><br><br>
+<!-- # VS Code Shortcuts -->
+<h1 align="center">VS Code Shortcuts</h1>
+
   
 ## Terminal Command
 
