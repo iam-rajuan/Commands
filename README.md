@@ -229,6 +229,14 @@ git push origin main  # or your current branch
 
 # SSH Key Setup
 
+- **Configure Username & email**
+  ```sh
+  git config --global user.name "Md Rajuan Hossen"
+  ```
+  ```sh
+  git config --global user.email "rajuan.official@gmail.com"
+  ```
+  
 - **Generate SSH key**
   ```sh
   ssh-keygen -t rsa -b 4096 -C "rajuan.official@.com"
