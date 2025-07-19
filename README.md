@@ -253,6 +253,7 @@ git push origin main  # or your current branch
   ```
 - Copy the txt "ssh-rsa ... @.com" and set up your key.
 
+---
 
 
 
@@ -278,6 +279,8 @@ git push origin main  # or your current branch
   ```sh
   iex(irm is.gd/idm_reset)
   ```
+---
+
 
 <br><br><br><br><br><hr>
 <!-- # VS Code Shortcuts -->
@@ -307,6 +310,7 @@ cd ..
 code -r <dirname> 
 code -r ExpressJS 
 ```
+---
 
 
 
@@ -558,3 +562,54 @@ JavaScript (ES6) code snippets
 <br><br><br><br><br><hr>
 <!-- # VS Code Shortcuts -->
 <h1 align="center">Sublime Text</h1>
+
+<h2 align="center">Installation & Code+Input+Output -> Setup & View</h2>
+
+- **view**
+```
+alt+shift+3
+view> Groups> Max Column 2
+```
+
+- **Code+Input+Output**
+```
+1. file.cpp 
+2. inputf.in 
+3. outputf.in 
+```
+- Setup C++
+```
+tools> build system> new build system> 
+```
+<h2 align="center">Build System</h2>
+
+- **C++14_windows-sublime-build** 
+```
+{
+"cmd": ["g++.exe","-std=c++14", "${file}", "-o", "${file_base_name}.exe", "&&" , "${file_base_name}.exe<inputf.in>outputf.in"],
+"selector":"source.cpp",
+"shell":true,
+"working_dir":"$file_path"
+}
+```
+- **C++14_linux-sublime-build** 
+```
+{
+"cmd" : ["g++ -std=c++14 $file_name -o $file_base_name && timeout 4s ./$file_base_name<inputf.in>outputf.in"], 
+"selector" : "source.c",
+"shell": true,
+"working_dir" : "$file_path"
+}
+```
+- **C++14_macos-sublime-build** 
+```
+{
+  "cmd" : ["g++-10 $file_name -o $file_base_name && gtimeout 4s ./$file_base_name<inputf.in>outputf.in"], 
+  "selector" : "source.c",
+  "shell": true,
+  "working_dir" : "$file_path"
+}
+```
+```
+save file with name "C++14" and tools> build system> C++14
+```
