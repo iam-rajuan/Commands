@@ -552,3 +552,9 @@ JavaScript (ES6) code snippets
 ```
 
 ---
+
+
+
+<br><br><br><br><br><hr>
+<!-- # VS Code Shortcuts -->
+<h1 align="center">Sublime Text</h1>
