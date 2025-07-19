@@ -173,7 +173,10 @@
   git push
   ```
 
-## Ignoring `package-lock.json` and `node_modules` in Git  
+ 
+<br><br>
+<!-- ## Ignoring `package-lock.json` and `node_modules` in Git  -->
+<h2 align="center">## Ignoring `package-lock.json` and `node_modules` in Git </h2>
 
 ### 1. Modify `.gitignore` in Your Repository  
 To ignore `package-lock.json` and `node_modules/` from all folders inside a specific repository, add the following lines to the `.gitignore` file at the root of your project:  
@@ -227,7 +230,8 @@ git push origin main  # or your current branch
 
 
 <br><br>
-# SSH Key Setup
+<!-- # SSH Key Setup -->
+<h2 align="center">SSH Key Setup</h2>
 
 - **Configure Username & email**
   ```sh
@@ -262,7 +266,7 @@ git push origin main  # or your current branch
 
   
 
-<br><br><br><br>
+<br><br><br><br><br><hr>
 <h1 align="center">Terminal Modify</h1>
 <!-- https://zimfw.sh/ -->
 
