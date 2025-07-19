@@ -175,8 +175,8 @@
 
  
 <br><br>
-<!-- ## Ignoring `package-lock.json` and `node_modules` in Git  -->
-<h2 align="center">## Ignoring `package-lock.json` and `node_modules` in Git </h2>
+<!-- # Ignoring `package-lock.json` and `node_modules` in Git  -->
+<h2 align="center">Ignoring `package-lock.json` and `node_modules` in Git </h2>
 
 ### 1. Modify `.gitignore` in Your Repository  
 To ignore `package-lock.json` and `node_modules/` from all folders inside a specific repository, add the following lines to the `.gitignore` file at the root of your project:  
@@ -220,15 +220,6 @@ git push origin main  # or your current branch
 
 
 
-
-
-
-
-
-
-
-
-
 <br><br>
 <!-- # SSH Key Setup -->
 <h2 align="center">SSH Key Setup</h2>
@@ -260,6 +251,7 @@ git push origin main  # or your current branch
   ```sh
   cat ~/.ssh/id_rsa.pub
   ```
+- Copy the txt "ssh-rsa ... @.com" and set up your key.
 
 
 
@@ -267,7 +259,7 @@ git push origin main  # or your current branch
   
 
 <br><br><br><br><br><hr>
-<h1 align="center">Terminal Modify</h1>
+<h1 align="center">Terminal Modify & Download Manager</h1>
 <!-- https://zimfw.sh/ -->
 
 ## Terminal Mod
@@ -287,7 +279,7 @@ git push origin main  # or your current branch
   iex(irm is.gd/idm_reset)
   ```
 
-<br><br><br><br>
+<br><br><br><br><br><hr>
 <!-- # VS Code Shortcuts -->
 <h1 align="center">VS Code Shortcuts</h1>
 
@@ -323,7 +315,8 @@ code -r ExpressJS
 
 
 <!-- # Installed Extensions -->
-<h1 align="center">Installed Extensions</h1>
+<br><br>
+<h1 align="center">Installed Extensions Details</h1>
 
 
 Below is a list of all the extensions installed in Visual Studio Code:
