@@ -579,7 +579,8 @@ view> Groups> Max Column 2
 ```
 - Setup C++
 ```
-tools> build system> new build system> 
+tools> build system> new build system>
+save file naem as C++14.sublime-build 
 ```
 <h2 align="center">Build System</h2>
 
