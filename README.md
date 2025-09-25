@@ -14,9 +14,7 @@
   ```sh
   git status
   ```
-  ```sh
-  git status
-  ```
+
   
   **Example:**
   After modifying a file (`index.js`), run `git status` to check its state before adding it to staging.
