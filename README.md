@@ -266,6 +266,11 @@ git push origin main  # or your current branch
 <h1 align="center">Terminal Modify & Download Manager</h1>
 <!-- https://zimfw.sh/ -->
 
+## Terminal commands
+- **install softwares**
+  ```sh
+  sudo dpkg -i ***
+  ```
 ## Terminal Mod
 
 - **ubuntu**
