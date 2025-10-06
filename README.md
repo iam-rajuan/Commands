@@ -11,9 +11,6 @@
   ```sh
   git status
   ```
-  ```sh
-  git status
-  ```
 
 
 
