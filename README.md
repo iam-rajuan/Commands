@@ -643,4 +643,119 @@ save file naem as C++14.sublime-build
 ```
 ```
 save file with name "C++14" and tools> build system> C++14
+```````markdown
+<br><br><br><br><br><hr>
+<h1 align="center">VS Code Installation on Ubuntu (.deb)</h1>
+
+<h2 align="center">Step-by-Step Installation</h2>
+
+- **Update and Upgrade Your System**
+  ```sh
+  sudo apt update
+  sudo apt upgrade -y
+````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* **Navigate to the Directory Containing the `.deb` File**
+
+  ```sh
+  cd ~/Downloads
+  ```
+
+* **Install VS Code Using dpkg**
+
+  ```sh
+  sudo dpkg -i code_*.deb
+  ```
+
+  (Replace `code_*.deb` with the actual file name, e.g. `code_1.94.2-1730770351_amd64.deb`)
+
+* **Fix Missing Dependencies (if any)**
+
+  ```sh
+  sudo apt --fix-broken install
+  ```
+
+* **Launch Visual Studio Code**
+
+  ```sh
+  code
+  ```
+
+---
+
+<h2 align="center">One-Line Installation (Recommended)</h2>
+
+```sh
+wget -O code.deb https://go.microsoft.com/fwlink/?LinkID=760868 && sudo apt install ./code.deb
 ```
+
+---
+
+<h2 align="center">Add Official Repository for Auto-Updates</h2>
+
+```sh
+sudo apt install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] \
+https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt update
+sudo apt install code
+```
+
+```
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
