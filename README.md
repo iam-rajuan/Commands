@@ -95,6 +95,9 @@
   ```sh
   git log -p -2
   ```
+  ```sh
+  git log -p -2
+  ```
 
 - **Compare working tree to staging area**
   ```sh
