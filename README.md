@@ -322,9 +322,6 @@ npm i -g nodemon
 node .\script.js
 ```
 ```sh
-nodemon .\script.js
-```
-```sh
 npx nodemon server.js
 ```
 <br><br><br><br><br><hr>
