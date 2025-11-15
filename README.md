@@ -309,6 +309,26 @@ git push origin main  # or your current branch
 
 <br><br><br><br><br><hr>
 <!-- # VS Code Shortcuts -->
+<h1 align="center">Backend</h1>
+
+  
+## Terminal Command
+
+- **install nodemon**
+```sh
+npm i -g nodemon
+```
+```sh
+node .\script.js
+```
+```sh
+nodemon .\script.js
+```
+```sh
+npx nodemon server.js
+```
+<br><br><br><br><br><hr>
+<!-- # VS Code Shortcuts -->
 <h1 align="center">VS Code Shortcuts</h1>
 
   
