@@ -699,22 +699,19 @@ save file with name "C++14" and tools> build system> C++14
 
 
 
+
 <br><br><br><br><br><hr>
 <!-- # Create User Using Terminal -->
 <h1 align="center">Create User Using Terminal</h1>
 
-<h2 align="center">Windows, Linux & macOS</h2>
+<h2 align="center">Without Administrator & With Administrator (Windows · Linux · macOS)</h2>
 
 ---
 
-## 🪟 Windows (Command Prompt / PowerShell)
+## 🪟 Windows
 
-### Open Terminal as Administrator
-- Press **Win + X → Terminal (Admin)**
-- Or **Command Prompt (Admin)**
-
-### Create a New Local User
-- **Create user**
+### Create User (Without Administrator)
+- **Create normal local user**
 ```sh
 net user username password /add
 ````
@@ -725,7 +722,15 @@ net user username password /add
 net user john MyStrongPass123 /add
 ```
 
-### Make User Administrator (Optional)
+### Create User (With Administrator)
+
+* **Create user**
+
+```sh
+net user username password /add
+```
+
+* **Add user to administrators group**
 
 ```sh
 net localgroup administrators username /add
@@ -734,7 +739,8 @@ net localgroup administrators username /add
 **Example:**
 
 ```sh
-net localgroup administrators john /add
+net user adminuser StrongPass123 /add
+net localgroup administrators adminuser /add
 ```
 
 ### Verify Users
@@ -743,25 +749,49 @@ net localgroup administrators john /add
 net user
 ```
 
+### Verify Administrators
+
+```sh
+net localgroup administrators
+```
+
 ---
 
 ## 🐧 Linux (Ubuntu / Debian / Most Distros)
 
-### Create a New User
+### Create User (Without Administrator)
+
+* **Create normal user**
 
 ```sh
 sudo adduser username
 ```
 
-You will be prompted to:
+**Example:**
 
-* Set a password
-* Enter optional user information
+```sh
+sudo adduser john
+```
 
-### Give Sudo (Admin) Access (Optional)
+### Create User (With Administrator / sudo)
+
+* **Create user**
+
+```sh
+sudo adduser username
+```
+
+* **Add user to sudo group**
 
 ```sh
 sudo usermod -aG sudo username
+```
+
+**Example:**
+
+```sh
+sudo adduser adminuser
+sudo usermod -aG sudo adminuser
 ```
 
 ### Verify User
@@ -770,11 +800,19 @@ sudo usermod -aG sudo username
 id username
 ```
 
+### Verify Admin (sudo) Access
+
+```sh
+groups username
+```
+
 ---
 
 ## 🍎 macOS
 
-### Create a New User
+### Create User (Without Administrator)
+
+* **Create standard user**
 
 ```sh
 sudo sysadminctl -addUser username -password password
@@ -786,23 +824,37 @@ sudo sysadminctl -addUser username -password password
 sudo sysadminctl -addUser john -password MyStrongPass123
 ```
 
-### Make User Admin (Optional)
+### Create User (With Administrator)
+
+* **Create user and assign admin role**
+
+```sh
+sudo sysadminctl -addUser username -password password -admin
+```
+
+**Example:**
+
+```sh
+sudo sysadminctl -addUser adminuser -password StrongPass123 -admin
+```
+
+### Make Existing User Administrator
 
 ```sh
 sudo dseditgroup -o edit -a username -t user admin
 ```
 
-### Verify User
+### Verify Administrators
 
 ```sh
-id username
+dscl . -read /Groups/admin GroupMembership
 ```
 
 ---
 
 ## 🔐 Password Management
 
-### Change Password Later
+### Change User Password
 
 * **Windows**
 
