@@ -696,49 +696,124 @@ save file with name "C++14" and tools> build system> C++14
 
 
 
+
+
+
 <br><br><br><br><br><hr>
-<h1 align="center">VS Code Installation on Ubuntu (.deb)</h1>
+<!-- # Create User Using Terminal -->
+<h1 align="center">Create User Using Terminal</h1>
 
-<h2 align="center">Step-by-Step Installation</h2>
+<h2 align="center">Windows, Linux & macOS</h2>
 
-- **Update and Upgrade Your System**
+---
+
+## 🪟 Windows (Command Prompt / PowerShell)
+
+### Open Terminal as Administrator
+- Press **Win + X → Terminal (Admin)**
+- Or **Command Prompt (Admin)**
+
+### Create a New Local User
+- **Create user**
 ```sh
-sudo apt update
-sudo apt upgrade -y
+net user username password /add
 ````
 
-* **Navigate to the Directory Containing the `.deb` File**
+**Example:**
 
 ```sh
-cd ~/Downloads
+net user john MyStrongPass123 /add
 ```
 
-* **Install VS Code Using dpkg**
+### Make User Administrator (Optional)
 
 ```sh
-sudo dpkg -i code_*.deb
+net localgroup administrators username /add
 ```
 
-(Replace `code_*.deb` with the actual file name, e.g. `code_1.94.2-1730770351_amd64.deb`)
-
-* **Fix Missing Dependencies (if any)**
+**Example:**
 
 ```sh
-sudo apt --fix-broken install
+net localgroup administrators john /add
 ```
 
+### Verify Users
 
+```sh
+net user
+```
 
+---
 
+## 🐧 Linux (Ubuntu / Debian / Most Distros)
 
+### Create a New User
 
+```sh
+sudo adduser username
+```
 
+You will be prompted to:
 
+* Set a password
+* Enter optional user information
 
+### Give Sudo (Admin) Access (Optional)
 
+```sh
+sudo usermod -aG sudo username
+```
 
+### Verify User
 
+```sh
+id username
+```
 
+---
 
+## 🍎 macOS
 
+### Create a New User
 
+```sh
+sudo sysadminctl -addUser username -password password
+```
+
+**Example:**
+
+```sh
+sudo sysadminctl -addUser john -password MyStrongPass123
+```
+
+### Make User Admin (Optional)
+
+```sh
+sudo dseditgroup -o edit -a username -t user admin
+```
+
+### Verify User
+
+```sh
+id username
+```
+
+---
+
+## 🔐 Password Management
+
+### Change Password Later
+
+* **Windows**
+
+```sh
+net user username *
+```
+
+* **Linux / macOS**
+
+```sh
+passwd username
+```
+
+---
