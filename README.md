@@ -873,3 +873,27 @@ passwd username
 ```
 
 ---
+
+
+
+
+
+Here’s a very short version suitable for a README:
+
+---
+
+### Netstat & Kill Process
+
+Check active ports and their PIDs:
+
+```powershell
+netstat -ano
+```
+
+Stop a specific process by PID (example: `15652`):
+
+```powershell
+stop-process -id 15652
+```
+
+---
