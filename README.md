@@ -907,8 +907,6 @@ stop-process -id 15652
 
 This document provides standardized instructions for installing and using the **OpenAI Codex CLI** globally, including integration with **Visual Studio Code**.
 
----
-
 ## System Requirements
 
 - Node.js **v18 or later**
@@ -918,6 +916,7 @@ This document provides standardized instructions for installing and using the **
 Verify Node.js installation:
 ```bash
 node -v
+```
 ````
 
 If not installed, download from:
