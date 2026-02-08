@@ -898,3 +898,114 @@ stop-process -id 15652
 ```
 
 ---
+
+
+
+
+````markdown
+# OpenAI Codex CLI — Global Installation Guide
+
+This document provides standardized instructions for installing and using the **OpenAI Codex CLI** globally, including integration with **Visual Studio Code**.
+
+---
+
+## System Requirements
+
+- Node.js **v18 or later**
+- npm (bundled with Node.js)
+- Valid OpenAI API key
+
+Verify Node.js installation:
+```bash
+node -v
+````
+
+If not installed, download from:
+[https://nodejs.org](https://nodejs.org)
+
+---
+
+## Global Installation
+
+Install Codex globally using npm:
+
+```bash
+npm install -g @openai/codex
+```
+
+Confirm installation:
+
+```bash
+codex --version
+```
+
+---
+
+## Environment Configuration
+
+Codex requires an OpenAI API key set as an environment variable.
+
+### macOS / Linux
+
+```bash
+export OPENAI_API_KEY="your_api_key_here"
+```
+
+### Windows (PowerShell)
+
+```powershell
+setx OPENAI_API_KEY "your_api_key_here"
+```
+
+Restart your terminal or VS Code session after configuration.
+
+---
+
+## Usage
+
+Run Codex commands from within any project directory.
+
+### Examples
+
+```bash
+codex "generate a Python script to organize files by extension"
+```
+
+```bash
+codex "explain the current codebase structure"
+```
+
+```bash
+codex "refactor this JavaScript code using async/await"
+```
+
+Codex automatically uses the working directory as context.
+
+---
+
+## Visual Studio Code Integration
+
+1. Open the project in **Visual Studio Code**
+2. Open the integrated terminal:
+
+   ```
+   Ctrl + `
+   ```
+3. Execute Codex commands directly in the terminal
+
+---
+
+## Security Best Practices
+
+* Store API keys securely
+* Never commit API keys to version control
+* Rotate API keys periodically
+
+---
+
+## License
+
+Documentation provided for internal development and operational use.
+
+```
+
