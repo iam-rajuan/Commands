@@ -890,6 +890,9 @@ Check active ports and their PIDs:
 ```powershell
 netstat -ano
 ```
+```powershell
+sudo lsof -i :5191
+```
 
 Stop a specific process by PID (example: `15652`):
 
