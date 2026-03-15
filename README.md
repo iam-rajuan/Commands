@@ -1005,5 +1005,238 @@ Codex automatically uses the working directory as context.
 
 Documentation provided for internal development and operational use.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+# MongoDB Atlas Database Transfer
+
+This guide shows how to **copy a database from one MongoDB Atlas cluster to another**.
+
+Tools used:
+
+* `mongodump` → export database
+* `mongorestore` → import database
+
+Works on:
+
+* **Windows (PowerShell)**
+* **Linux / macOS (Bash)**
+
+---
+
+# Requirements
+
+Install **MongoDB Database Tools**
+
+Download:
+[https://www.mongodb.com/try/download/database-tools](https://www.mongodb.com/try/download/database-tools)
+
+Verify installation:
+
+### PowerShell
+
+```powershell
+mongodump --version
+mongorestore --version
 ```
 
+### Bash
+
+```bash
+mongodump --version
+mongorestore --version
+```
+
+---
+
+# Step 1 — Export Database (Source Cluster)
+
+Export the database to a local backup folder.
+
+### PowerShell
+
+```powershell
+mongodump --uri="mongodb+srv://SOURCE_USER:SOURCE_PASSWORD@SOURCE_CLUSTER.mongodb.net" --db stoneacademyDB_test --out C:\backup
+```
+
+### Bash
+
+```bash
+mongodump --uri="mongodb+srv://SOURCE_USER:SOURCE_PASSWORD@SOURCE_CLUSTER.mongodb.net" --db stoneacademyDB_test --out ./backup
+```
+
+Backup structure:
+
+```
+backup/
+ └── stoneacademyDB_test
+      ├ users.bson
+      ├ events.bson
+      ├ activities.bson
+      └ ...
+```
+
+---
+
+# Step 2 — Restore Database (Destination Cluster)
+
+Restore the backup to the destination cluster.
+
+### PowerShell
+
+```powershell
+mongorestore --uri="mongodb+srv://DEST_USER:DEST_PASSWORD@DEST_CLUSTER.mongodb.net" --nsFrom="stoneacademyDB_test.*" --nsTo="stoneacademyDB.*" C:\backup
+```
+
+### Bash
+
+```bash
+mongorestore --uri="mongodb+srv://DEST_USER:DEST_PASSWORD@DEST_CLUSTER.mongodb.net" --nsFrom="stoneacademyDB_test.*" --nsTo="stoneacademyDB.*" ./backup
+```
+
+This copies:
+
+```
+stoneacademyDB_test → stoneacademyDB
+```
+
+Example result:
+
+```
+stoneacademyDB
+ ├ users
+ ├ events
+ ├ activities
+ ├ subscriptions
+ └ ...
+```
+
+---
+
+# Restore a Single Collection (Optional)
+
+### PowerShell
+
+```powershell
+mongorestore --uri="DEST_CLUSTER" --db stoneacademyDB --collection users C:\backup\stoneacademyDB_test\users.bson
+```
+
+### Bash
+
+```bash
+mongorestore --uri="DEST_CLUSTER" --db stoneacademyDB --collection users ./backup/stoneacademyDB_test/users.bson
+```
+
+---
+
+# Overwrite Existing Data (Optional)
+
+Use `--drop` to replace existing collections.
+
+### PowerShell
+
+```powershell
+mongorestore --uri="DEST_CLUSTER" --drop --nsFrom="stoneacademyDB_test.*" --nsTo="stoneacademyDB.*" C:\backup
+```
+
+### Bash
+
+```bash
+mongorestore --uri="DEST_CLUSTER" --drop --nsFrom="stoneacademyDB_test.*" --nsTo="stoneacademyDB.*" ./backup
+```
+
+---
+
+# Verify Migration
+
+Open MongoDB Atlas:
+
+```
+Database → Browse Collections
+```
+
+Confirm:
+
+```
+stoneacademyDB
+```
+
+contains all collections.
+
+---
+
+# Quick Command Summary
+
+### Export
+
+PowerShell
+
+```powershell
+mongodump --uri="SOURCE_CLUSTER" --db DATABASE_NAME --out C:\backup
+```
+
+Bash
+
+```bash
+mongodump --uri="SOURCE_CLUSTER" --db DATABASE_NAME --out ./backup
+```
+
+---
+
+### Restore
+
+PowerShell
+
+```powershell
+mongorestore --uri="DEST_CLUSTER" --nsFrom="DATABASE_NAME.*" --nsTo="NEW_DATABASE_NAME.*" C:\backup
+```
+
+Bash
+
+```bash
+mongorestore --uri="DEST_CLUSTER" --nsFrom="DATABASE_NAME.*" --nsTo="NEW_DATABASE_NAME.*" ./backup
+```
+
+---
+
+# Security Note
+
+Never store database credentials in code repositories.
+
+If credentials appear in terminal logs, rotate them in:
+
+```
+MongoDB Atlas → Database Access
+```
+
+---
