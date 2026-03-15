@@ -901,7 +901,7 @@ stop-process -id 15652
 
 
 
-````markdown
+
 # OpenAI Codex CLI — Global Installation Guide
 
 This document provides standardized instructions for installing and using the **OpenAI Codex CLI** globally, including integration with **Visual Studio Code**.
@@ -916,7 +916,7 @@ Verify Node.js installation:
 ```bash
 node -v
 ```
-````
+
 
 If not installed, download from:
 [https://nodejs.org](https://nodejs.org)
@@ -1037,10 +1037,11 @@ Documentation provided for internal development and operational use.
 
 
 ---
+<br><br><br><br><br><hr>
+<!-- # Create User Using Terminal -->
+<h1 align="center">MongoDB Atlas Database Transfer</h1>
 
-# MongoDB Atlas Database Transfer
-
-This guide shows how to **copy a database from one MongoDB Atlas cluster to another**.
+<h2 align="center">This guide shows how to **copy a database from one MongoDB Atlas cluster to another**.</h2>
 
 Tools used:
 
