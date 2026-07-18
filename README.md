@@ -8,6 +8,10 @@
   ```sh
   git status
   ```
+- **Check git status**
+  ```sh
+  git status
+  ```
 
 
 
